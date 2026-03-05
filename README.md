@@ -63,7 +63,7 @@ Meu foco é desenvolver domínio em:
 - 📖 Estudos sobre arquitetura de jogos
 - 🧪 Primeiros experimentos com sistemas fundamentais
 - 🎮 Desenvolvimento de pequenos protótipos
-- 💻 Projeto prático sobre uso de interfaces em Java ([Click here](Codigos/minecraft_mod))
+- 💻 Projeto prático sobre uso de interfaces em Java ([Click here](Codigos/Sistema%20de%20armas/))
 
 ---
 
