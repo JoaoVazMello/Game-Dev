@@ -156,6 +156,7 @@ public class Main {
             }
 
             if(zumbi.getHealth() <= 0){
+                System.out.println("Monstro derrotado");
                 opcao = -1;
             }
         }

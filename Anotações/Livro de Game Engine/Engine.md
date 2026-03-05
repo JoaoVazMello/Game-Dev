@@ -54,6 +54,3 @@ Ex Game-Loop:
 enquanto o tempo passa com o jogo preso no loop o tempo atual e salvo depois o Δt (a diferença de tempo entre um quadro e outro) e calculado, e atualiza a ultima vez que a posiçao foi calculada, altera essa posiçao , renderiza com esse novo valor e faz tudo denovo
 
 fazendo assim isso garante que o jogo va percorrer a mesma distancia baseada no tempo real que passou e nao na quantidade de frames na tela, pois isso iria causa um bug, onde se voce tem menos fps voce percorre menos caminho do que alguem que alguem com mais fps
-
-Livros utilizados:
-

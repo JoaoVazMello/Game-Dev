@@ -12,10 +12,4 @@ para fazer esse controle dentro do java existe o mecanismo de controle de acesso
 
 para um componente ser bem feito e necessario que: *"torne cada classe ou membro o mais inacessível possível."*, ou seja, cada parte deve ser separada uma da outra para que nao aconteca de existir dependencia de partes dentro do codigo
 
-para classes principais existe somente dois possiveis niveis de acesso que sao : 'packge-private' e 'pubic', e definindo que a classe deve ser o menos acessavel possivel e importante, se possivel , torna-la pack
-
-
-
-| livro | autor |
-|:---------------------------------:|:---------------------------------:|
-|             Effective Java        |       Joshua Bloch              |
+para classes principais existe somente dois possiveis niveis de acesso que sao : 'packge-private' e 'pubic', e definindo que a classe deve ser o menos acessavel possivel e importante, se possivel , torna-la packge-private
