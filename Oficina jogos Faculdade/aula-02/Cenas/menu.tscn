@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ik2wte3sqic1"]
+
+[ext_resource type="Script" uid="uid://cr2nlmyw0avti" path="res://Codigos/menu.gd" id="1_vpgfy"]
+[ext_resource type="Texture2D" uid="uid://bg285aenkjb0g" path="res://Sprites/Forest.jpg" id="2_eheat"]
+[ext_resource type="FontFile" uid="uid://c1xulgfar5ja5" path="res://Fonte/PixelifySans-VariableFont_wght.ttf" id="3_fapvr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdsmm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Menu" type="Control" unique_id=181708317]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1151.0
+offset_bottom = 648.0
+script = ExtResource("1_vpgfy")
+
+[node name="Forest" type="Sprite2D" parent="." unique_id=138230628]
+position = Vector2(577.75, 324.74997)
+scale = Vector2(1.1274414, 1.127604)
+texture = ExtResource("2_eheat")
+
+[node name="Button" type="Button" parent="." unique_id=955457360]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 471.0
+offset_right = 477.0
+offset_bottom = 520.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_fapvr")
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_kdsmm")
+text = "Menu"
+
+[node name="Label" type="Label" parent="." unique_id=1203838912]
+layout_mode = 0
+offset_left = 315.0
+offset_top = 486.0
+offset_right = 1151.0
+offset_bottom = 641.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("3_fapvr")
+theme_override_font_sizes/font_size = 60
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://bp6173kp0byyk"]
+
+[ext_resource type="Script" uid="uid://cmj0wakhjnrsu" path="res://codigo/Gameover.gd" id="1_at4c4"]
+[ext_resource type="FontFile" uid="uid://bbj4sm737l8r2" path="res://assets/fonts/PixelifySans-VariableFont_wght.ttf" id="2_m1ejv"]
+
+[node name="Menu" type="Control" unique_id=834717013]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_at4c4")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2084402907]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 645.0
+color = Color(0.93333334, 0.9647059, 0.75686276, 1)
+
+[node name="Label2" type="Label" parent="ColorRect" unique_id=878783999]
+layout_mode = 1
+offset_left = 25.0
+offset_top = 152.0
+offset_right = 626.0
+offset_bottom = 652.0
+theme_override_colors/font_color = Color(1, 0.27058825, 0.25882354, 1)
+theme_override_fonts/font = ExtResource("2_m1ejv")
+theme_override_font_sizes/font_size = 100
+text = "BRUTAL 
+SOBRA
+NADA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1631556382]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 171.0
+theme_override_colors/font_color = Color(1, 0, 0.047058824, 1)
+theme_override_fonts/font = ExtResource("2_m1ejv")
+theme_override_font_sizes/font_size = 160
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="ColorRect" unique_id=581213047]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 264.0
+offset_right = 981.0
+offset_bottom = 406.0
+theme_override_fonts/font = ExtResource("2_m1ejv")
+theme_override_font_sizes/font_size = 80
+text = "Jogar"
+
+[node name="Button2" type="Button" parent="ColorRect" unique_id=250462623]
+layout_mode = 0
+offset_left = 594.0
+offset_top = 443.0
+offset_right = 981.0
+offset_bottom = 585.0
+theme_override_fonts/font = ExtResource("2_m1ejv")
+theme_override_font_sizes/font_size = 80
+text = "Sair"
+
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/Button2" to="." method="_on_button_2_pressed"]

@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bldm0luvnwb4y"]
+
+[ext_resource type="Texture2D" uid="uid://bg285aenkjb0g" path="res://Sprites/Forest.jpg" id="1_7t40e"]
+[ext_resource type="PackedScene" uid="uid://dl01iuu0sdotq" path="res://Cenas/apple.tscn" id="2_d5ttk"]
+[ext_resource type="PackedScene" uid="uid://dn471pl6lhfmx" path="res://Cenas/Basket.tscn" id="3_svfr6"]
+[ext_resource type="PackedScene" uid="uid://ewlux2wtt801" path="res://Cenas/Bomba.tscn" id="4_0bvrx"]
+
+[node name="Node2D" type="Node2D" unique_id=371777791]
+
+[node name="Forest" type="Sprite2D" parent="." unique_id=536194341]
+position = Vector2(575.32916, 324.99997)
+scale = Vector2(1.1197835, 1.1180556)
+texture = ExtResource("1_7t40e")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1437190154]
+
+[node name="Score" type="Label" parent="CanvasLayer" unique_id=1132344249]
+offset_left = 27.0
+offset_top = 16.0
+offset_right = 187.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 30
+text = "Score : 0"
+
+[node name="apples" type="Label" parent="CanvasLayer" unique_id=1265950037]
+offset_left = 966.0
+offset_top = 18.0
+offset_right = 1126.0
+offset_bottom = 60.0
+theme_override_font_sizes/font_size = 30
+text = "Apples"
+
+[node name="Apple" parent="." unique_id=520893615 instance=ExtResource("2_d5ttk")]
+position = Vector2(677, 109)
+
+[node name="basket" parent="." unique_id=1339706684 instance=ExtResource("3_svfr6")]
+position = Vector2(682, 563)
+
+[node name="Bomba" parent="." unique_id=255718814 instance=ExtResource("4_0bvrx")]
+position = Vector2(591, 123)
