@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c4p6a1r3ib0ve"]
+
+[ext_resource type="Script" uid="uid://d2cpk0xlvbgel" path="res://enemy.gd" id="1_7k104"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4gyqm"]
+albedo_color = Color(0.9955403, 0.28355965, 0.39065737, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_qi2p4"]
+material = SubResource("StandardMaterial3D_4gyqm")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iifgy"]
+
+[node name="enemy" type="Area3D" unique_id=1066278694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7962227, 0)
+script = ExtResource("1_7k104")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=985990303]
+transform = Transform3D(0.9999245, -0.008650053, 0.008726203, 0.008726203, 0.9999238, -0.008726535, -0.008650053, 0.008802023, 0.9999238, 0, 0, 0)
+mesh = SubResource("BoxMesh_qi2p4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1115144368]
+transform = Transform3D(0.9999245, -0.008650053, 0.008726203, 0.008726203, 0.9999238, -0.008726535, -0.008650053, 0.008802023, 0.9999238, 0, 0, 0)
+shape = SubResource("BoxShape3D_iifgy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

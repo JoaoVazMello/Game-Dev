@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cfbgwbverpjvl"]
+
+[ext_resource type="Script" uid="uid://oo15ir0i0frn" path="res://item.gd" id="1_tnite"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vpy52"]
+albedo_color = Color(1, 0.12941177, 0.7607843, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_vpy52"]
+material = SubResource("StandardMaterial3D_vpy52")
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_tnite"]
+
+[node name="item" type="Area3D" unique_id=1097032699]
+script = ExtResource("1_tnite")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1343653602]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0)
+mesh = SubResource("CylinderMesh_vpy52")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=864784503]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0)
+shape = SubResource("CylinderShape3D_tnite")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
